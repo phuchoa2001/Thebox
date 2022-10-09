@@ -5,6 +5,7 @@
   justify-content: space-between;
   width: 100%;
   transition: all 0.3s ease;
+  z-index: 9999;
   &_logo {
     display: flex;
     justify-content: center;
