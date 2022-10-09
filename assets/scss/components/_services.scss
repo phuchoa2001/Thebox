@@ -1,0 +1,117 @@
+.services {
+  background: #f6f8f7;
+  padding-top: 44px;
+  padding-bottom: 76px;
+  &_title {
+    margin-bottom: 36px;
+  }
+  &_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 46px 100px;
+    padding: 0px 100px;
+    &_title {
+      font-weight: 600;
+      font-size: $font_size_secondary;
+      line-height: 23px;
+      color: #2947a9;
+    }
+  }
+  &_item {
+    padding: 42px 72px 38px 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 0px 37px -2px rgba(17, 24, 39, 0.05);
+    cursor: pointer;
+  }
+  &_item:nth-child(odd) {
+    background: $white;
+  }
+  &_item:nth-child(odd):hover {
+    background: $primary;
+    & .path {
+      fill: $white;
+    }
+  }
+  &_item:nth-child(odd):hover &_list_title {
+    color: $white;
+  }
+  &_item:nth-child(even) {
+    background: $primary;
+    & .path {
+      fill: $white;
+    }
+  }
+  &_item:nth-child(even):hover {
+    background: $white;
+    & .path {
+      fill: $black;
+    }
+  }
+  &_item:nth-child(even):hover &_list_title {
+    color: $primary;
+  }
+  &_item:nth-child(even) &_list_title {
+    color: $white;
+  }
+  &_boxIcon {
+    position: relative;
+    margin-bottom: 42px;
+    z-index: 20;
+    &::before {
+        content: "";
+        position: absolute;
+        background: #7595FD;
+        bottom: 0px;
+        left: 0px;
+        width: 23.33px;
+        height: 23.33px;
+        z-index: -1;
+      }
+  }
+}
+
+
+@media only screen and (max-width: 539px) {
+  /* PC Điện thoại nhỏ hơn 539px */
+  .services {
+    &_list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px 0px;
+      padding: 0px;
+    }
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 719px) {
+  /* Điện thoại màn hình lớn thua IPAD */
+  .services {
+    &_list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px 0px;
+      padding: 0px;
+    }
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+  /* IPAD  */
+  .services {
+    &_list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px 0px;
+      padding: 0px;
+    }
+  }
+}
+@media only screen and (min-width: 960px) and (max-width: 1139px) {
+  /* IPAD Pro */
+  .services {
+    &_list {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 35px 80px;
+    }
+  }
+}
+

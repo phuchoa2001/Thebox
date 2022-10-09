@@ -1,0 +1,200 @@
+.stats {
+  padding-top: 103px;
+  padding-bottom: 57px;
+  &_box {
+    padding: 0px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_info {
+    width: 330px;
+
+    &_title {
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 70px;
+      color: $primary;
+      margin-bottom: 40px;
+    }
+    &_desc {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      color: #525b7a;
+      margin-bottom: 67px;
+    }
+    &_button {
+      padding: 16px 39px;
+    }
+  }
+  &_data {
+    flex: 1;
+    margin-right: 152px;
+    display: block;
+  }
+  &_wrapper {
+    width: 100%;
+    display: flex;
+  }
+  &_tags {
+    background: $white;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 12px 16px -4px rgba(17, 24, 39, 0.1),
+      0px 4px 6px -2px rgba(17, 24, 39, 0.05);
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    padding: 30px 80px 30px 30px;
+    display: inline-block;
+    width: auto;
+    position: relative;
+    & h3 {
+      font-weight: 600;
+      font-size: 72px;
+      line-height: 84px;
+      color: #292e3d;
+      display: inline-block;
+      margin-bottom: 2px;
+    }
+    &_box {
+      display: flex;
+      align-items: center;
+    }
+    &_color {
+      width: 7px;
+      height: 28px;
+      background: $secondary;
+      margin-right: 12px;
+      margin-left: 16px;
+    }
+    &_title {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      color: #667299;
+    }
+    &_icon {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      transform: translateY(-50%);
+    }
+  }
+  &_wrapper:nth-child(odd) {
+    justify-content: flex-end;
+  }
+  &_projects {
+    &_icon {
+      right: unset;
+      left: 0px;
+    }
+  }
+  &_awardsWin {
+    margin-right: 50px;
+    margin-top: -10px;
+    &_icon {
+      transform: translateY(-25px);
+    }
+  }
+  &_business {
+    margin-left: 50px;
+    &_icon {
+      top: unset;
+      bottom: 0px;
+      transform: translate(35px, 40px);
+    }
+  }
+  &_wrapper:nth-child(odd) &_tags {
+    z-index: 10;
+  }
+  &_wrapper:nth-child(even) {
+    justify-content: flex-start;
+    margin-top: -50px;
+  }
+}
+
+@media only screen and (max-width: 539px) {
+  /* PC Điện thoại nhỏ hơn 539px */
+  .stats {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &_box {
+      flex-direction: column;
+      padding: 0px;
+    }
+    &_wrapper:nth-child(even) {
+      margin: 0px;
+    }
+    &_awardsWin,
+    &_business {
+      margin: 0px;
+    }
+    &_tags {
+      width: 100%;
+      padding: 30px;
+      &_icon {
+        display: none;
+      }
+    }
+    &_data {
+      width: 100%;
+      margin-right: 0px;
+    }
+    &_info {
+      margin-top: 20px;
+    }
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 719px) {
+  /* Điện thoại màn hình lớn thua IPAD */
+  .stats {
+    &_box {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+    }
+    &_data {
+      width: 100%;
+      margin-right: 0px;
+    }
+    &_info {
+      margin-top: 100px;
+      width: 100%;
+    }
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+  /* IPAD  */
+  .stats {
+    &_box {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+    }
+    &_data {
+      width: 100%;
+      margin-right: 0px;
+    }
+    &_info {
+      margin-top: 100px;
+      width: 100%;
+    }
+  }
+}
+@media only screen and (min-width: 960px) and (max-width: 1139px) {
+  /* IPAD Pro */
+  .stats {
+    &_box {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &_data {
+      width: 100%;
+      margin-right: 0px;
+    }
+    &_info {
+      margin-top: 100px;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font: {
+    size: 1.6rem;
+    weight: 400;
+    family: $font;
+  }
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: auto;
+}
+.container {
+  max-width: 1220px;
+  padding: 0px 10px;
+  margin: auto;
+}

@@ -1,0 +1,91 @@
+.reasons {
+  padding-top: 60px;
+  padding-bottom: 84px;
+  &_title {
+    margin-bottom: 50px;
+  }
+  &_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0px 100px;
+    gap: 0 60px;
+    &_title {
+      font-weight: 700;
+      font-size: $font_size_secondary;
+      line-height: 23px;
+      color: #3d445c;
+      margin-bottom: 18px;
+    }
+    &_desc {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #858ead;
+    }
+  }
+  &_item {
+    padding: 22px 18px 40px 20px;
+    border: 1.4px solid #e0e3eb;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+    animation-name: runOnDown;
+    animation-duration: 0.7s;
+    animation-timing-function: ease;
+  }
+  &_item:hover &_list_title {
+    color: $primary;
+  }
+  &_icon {
+    margin-bottom: 18px;
+  }
+}
+
+@keyframes runOnDown {
+  0% {
+    transform: translateY(-150px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@media only screen and (max-width: 539px) {
+  /* PC Điện thoại nhỏ hơn 539px */
+  .reasons {
+    padding-top: 20px;
+    padding-bottom: 24px;
+    &_list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px 0px;
+      padding: 0px;
+    }
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 719px) {
+  /* Điện thoại màn hình lớn thua IPAD */
+  .reasons {
+    padding-top: 20px;
+    padding-bottom: 24px;
+    &_list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px 0px;
+      padding: 0px;
+    }
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+  /* IPAD  */
+  .reasons {
+    padding-top: 20px;
+    padding-bottom: 24px;
+    &_list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px 0px;
+      padding: 0px;
+    }
+  }
+}
+@media only screen and (min-width: 960px) and (max-width: 1139px) {
+  /* IPAD Pro */
+}

@@ -1,0 +1,132 @@
+.about {
+  padding-top: 74px;
+  padding-bottom: 202px;
+  &_box {
+    position: relative;
+    width: 100%;
+  }
+  &_info {
+    padding: 50px 60px 60px 40px;
+    background: $primary;
+    position: absolute;
+    width: 488px;
+    border-radius: 2px;
+
+    top: 73px;
+    right: 0px;
+    &_title {
+      color: $white;
+      text-align: left;
+      margin-bottom: 37px;
+    }
+    &_text {
+      font-weight: 400;
+      font-size: $font_size_secondary;
+      line-height: 23px;
+      margin-bottom: 30px;
+      color: $white;
+    }
+    &_button {
+      margin-top: 44px;
+    }
+  }
+}
+
+@media only screen and (max-width: 539px) {
+  /* PC Điện thoại nhỏ hơn 539px */
+  .about {
+    padding-top: 50px;
+    padding-bottom: 0px;
+    &_box {
+      width: auto;
+    }
+    &_image {
+      display: flex;
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+    &_info {
+      position: unset;
+      max-width: 100%;
+      width: 100%;
+      box-sizing: border-box;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 719px) {
+  /* Điện thoại màn hình lớn thua IPAD */
+  .about {
+    padding-top: 50px;
+    padding-bottom: 0px;
+    &_box {
+      width: auto;
+    }
+    &_image {
+      display: flex;
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+    &_info {
+      position: unset;
+      max-width: 100%;
+      width: 100%;
+      box-sizing: border-box;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+  /* IPAD  */
+  .about {
+    padding-top: 50px;
+    padding-bottom: 0px;
+    &_box {
+      width: auto;
+    }
+    &_image {
+      display: flex;
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+    &_info {
+      position: unset;
+      max-width: 100%;
+      width: 100%;
+      box-sizing: border-box;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  }
+}
+@media only screen and (min-width: 960px) and (max-width: 1139px) {
+  /* IPAD Pro */
+  .about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &_box {
+      width: auto;
+    }
+    &_image {
+      display: flex;
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+    &_info {
+      position: unset;
+      max-width: 100%;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+}

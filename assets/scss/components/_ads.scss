@@ -1,0 +1,92 @@
+.ads {
+  margin-top: 100px;
+  background: no-repeat;
+  height: 300px;
+  background-size: 100%;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(https://i.pinimg.com/564x/1d/21/ca/1d21ca116fffde88b56a769c84f962f8.jpg);
+  width: 100%;
+  &_title {
+    text-align: left;
+    color: $white;
+    margin-bottom: 30px;
+  }
+  &_left {
+    margin-right: 182px;
+  }
+  &_container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  &_contact {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: $white;
+  }
+  &_button {
+    padding: 16px 20px;
+  }
+  &_link {
+    color: $white;
+  }
+}
+
+@media only screen and (max-width: 539px) {
+  /* PC Điện thoại nhỏ hơn 539px */
+  .ads { 
+    margin-top: 20px;
+    &_container {
+       flex-direction: column;
+       align-items: flex-start;
+       justify-content: center;
+    }
+    &_left {
+      margin: 0px;
+      width: 100%;
+    }
+    &_right {
+      margin-top: 30px;
+    }
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 719px) {
+  /* Điện thoại màn hình lớn thua IPAD */
+  .ads { 
+    margin-top: 30px; 
+    &_container {
+       flex-direction: column;
+       align-items: flex-start;
+       justify-content: center;
+    }
+    &_left {
+      margin: 0px;
+      width: 100%;
+    }
+    &_right {
+      margin-top: 30px;
+    }
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+  .ads { 
+    margin-top: 30px; 
+    &_container {
+       flex-direction: column;
+       align-items: flex-start;
+       justify-content: center;
+    }
+    &_left {
+      margin: 0px;
+      width: 100%;
+    }
+    &_right {
+      margin-top: 30px;
+    }
+  }
+}

@@ -1,0 +1,136 @@
+.footer {
+  padding-top: 85px;
+
+  &_container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &_left {
+    flex: 1;
+  }
+  &_link {
+    text-decoration: none;
+    color: #292e3d;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: block;
+    margin-bottom: 32px;
+
+    & span {
+      color: $primary;
+      font-weight: 500;
+      font-variant: small-caps;
+      text-transform: uppercase;
+    }
+  }
+  &_logo {
+    display: inline-flex;
+  }
+  &_right {
+    width: 100%;
+    max-width: 430px;
+    &_title {
+      font-weight: 500;
+      font-size: $primary;
+      line-height: 23px;
+      color: $primary;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    &_send {
+      display: flex;
+      margin-bottom: 42px;
+    }
+    &_input {
+      flex: 1;
+      margin-right: 8px;
+      padding: 10px 8px;
+      background: #ffffff;
+      outline: none;
+      font-weight: 400;
+      font-size: 18px;
+      color: #a3aac2;
+      line-height: 21px;
+      border: 1px solid #e0e3eb;
+      border-radius: 4px;
+    }
+    &_button {
+      padding: 10px 23px;
+      background: $secondary;
+      border: none;
+      color: $white;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 21px;
+      border-radius: 4px;
+    }
+  }
+  &_icon {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  &_copyright {
+    background: $primary;
+    margin-top: 83px;
+    &_text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: $white;
+      padding: 26px 0px;
+    }
+  }
+}
+
+@media only screen and (max-width: 539px) {
+  /* PC Điện thoại nhỏ hơn 539px */
+  .footer {
+    padding-top: 20px;
+    &_container {
+      flex-direction: column;
+    }
+    &_right {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 20px;
+    }
+    &_copyright {
+      margin-top: 50px;
+    }
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 719px) {
+  /* Điện thoại màn hình lớn thua IPAD */
+  .footer {
+    padding-top: 20px;
+    &_container {
+      flex-direction: column;
+    }
+    &_right {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 20px;
+    }
+    &_copyright {
+      margin-top: 50px;
+    }
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+  /* IPAD  */
+  .footer {
+    padding-top: 50px;
+    &_container {
+      flex-direction: column;
+    }
+    &_right {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 20px;
+    }
+    &_copyright {
+      margin-top: 50px;
+    }
+  }
+}

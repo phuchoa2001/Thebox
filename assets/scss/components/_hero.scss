@@ -1,0 +1,154 @@
+.hero {
+  margin: auto;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  &_box {
+    width: 100%;
+    max-width: 556px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &_image {
+    max-width: 100%;
+  }
+
+  &_feature {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    &_top {
+      background: #3559c7;
+      border-radius: 2px 2px 0px 0px;
+      padding: 20px 52px 26px 52px;
+    }
+    &_title {
+      font-weight: 700;
+      font-size: $font_size_secondary;
+      line-height: 23px;
+      color: $white;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    &_desc {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      color: $white;
+      margin-bottom: 26px;
+      width: 312px;
+    }
+    &_bottom {
+      display: flex;
+      background: #292e3d;
+    }
+    &_btn {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      padding: 9.5px 0px;
+      color: $white;
+      cursor: pointer;
+    }
+    &_btn:hover > &_icon,
+    &_btn:hover {
+      color: $secondary;
+    }
+    &_icon {
+      &-back {
+        margin-right: 10px;
+      }
+      &-next {
+        margin-left: 10px;
+      }
+    }
+    &_text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 539px) {
+  /* PC Điện thoại nhỏ hơn 539px */
+  .hero {
+    &_feature {
+      &_top {
+        background: transparent;
+      }
+      &_title {
+        font-size: 12px;
+        margin-bottom: 0px;
+        color: $primary;
+        text-align: right;
+      }
+      &_desc {
+        font-size: 10px;
+        margin-bottom: 0px;
+        text-align: right;
+        color: $primary;
+      }
+      &_bottom {
+        display: none;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 719px) {
+  /* Điện thoại màn hình lớn thua IPAD */
+  .hero {
+    &_feature {
+      &_top {
+        background: transparent;
+      }
+      &_title {
+        font-size: 15px;
+        margin-bottom: 0px;
+        color: $primary;
+        text-align: right;
+      }
+      &_desc {
+        font-size: 12px;
+        margin-bottom: 5px;
+        text-align: right;
+        color: $primary;
+      }
+      &_bottom {
+        display: none;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+  /* IPAD  */
+  .hero {
+    &_feature {
+      &_top {
+        background: transparent;
+      }
+      &_title {
+        font-size: 15px;
+        margin-bottom: 0px;
+        color: $primary;
+        text-align: right;
+      }
+      &_desc {
+        font-size: 12px;
+        margin-bottom: 5px;
+        text-align: right;
+        color: $primary;
+      }
+      &_bottom {
+        display: none;
+      }
+    }
+    &_box {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}

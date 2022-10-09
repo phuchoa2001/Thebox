@@ -1,0 +1,249 @@
+.projects {
+  padding-top: 83px;
+  padding-bottom: 138px;
+  &_title {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  &_tabs {
+    display: flex;
+  }
+  &_panes {
+    margin-right: 254px;
+  }
+  &_pane {
+    padding: 0px 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    p {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      color: #c2c7d6;
+    }
+    &-active,
+    &:hover {
+      position: relative;
+      p {
+        color: $primary;
+        font-weight: 700;
+      }
+      ::after {
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 28px;
+        background: $primary;
+        left: 0;
+      }
+    }
+  }
+
+  &_item {
+    &_boxImage {
+      display: flex;
+      height: auto;
+      & img {
+        height: 247px;
+      }
+    }
+    &_wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+    &_title {
+      font-weight: 700;
+      font-size: $font_size_secondary;
+      line-height: 23px;
+      color: $white;
+      margin-bottom: 12px;
+    }
+    &_address {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      color: $white;
+    }
+    &_footer {
+      background: $primary;
+      padding: 12px 0px 16px 12px;
+    }
+    &_boxBtn {
+      margin-top: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &_button {
+      padding: 22px 108px;
+      background: #292e3d;
+      color: $white;
+      border: none;
+      border-radius: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        color: $secondary;
+      }
+    }
+    &_listDot {
+      padding: 0px 32px;
+      display: flex;
+    }
+    &_dot {
+      width: 16px;
+      height: 16px;
+      background: #f6f8f7;
+      border-radius: 50%;
+      margin-right: 16px;
+      cursor: pointer;
+      &-active,
+      &:hover {
+        background: $primary;
+      }
+    }
+    &_back {
+      margin-right: 10px;
+    }
+    &_next {
+      margin-left: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 539px) {
+  /* PC Điện thoại nhỏ hơn 539px */
+  .projects {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &_tabs {
+      flex-direction: column;
+    }
+    &_title {
+      text-align: center;
+    }
+    &_panes {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      margin: 0px;
+    }
+    &_pane p {
+      font-size: 15px;
+    }
+    &_item {
+      &_boxImage img {
+        height: auto;
+        width: 100%;
+      }
+      &_boxBtn {
+        justify-content: center;
+      }
+      &_button {
+        padding: 22px 50px;
+        display: none;
+        p {
+          display: none;
+        }
+      }
+      &_wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 719px) {
+  /* Điện thoại màn hình lớn thua IPAD */
+  .projects {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &_tabs {
+      flex-direction: column;
+    }
+    &_title {
+      text-align: center;
+    }
+    &_pane p {
+      font-size: 18px;
+    }
+    &_panes {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      margin: 0px;
+    }
+    &_item {
+      &_boxImage img {
+        height: auto;
+        width: 100%;
+      }
+      &_button {
+        padding: 22px 50px;
+        p {
+          display: none;
+        }
+      }
+      &_wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+  /* IPAD  */
+  .projects {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &_tabs {
+      flex-direction: column;
+    }
+    &_title {
+      text-align: center;
+    }
+    &_panes {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      margin: 0px;
+    }
+    &_item {
+      &_boxImage img {
+        height: auto;
+        width: 100%;
+      }
+      &_button {
+        padding: 22px 50px;
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 960px) and (max-width: 1139px) {
+  /* IPAD Pro */
+  .projects {
+    &_tabs {
+      flex-direction: column;
+    }
+    &_title {
+      text-align: center;
+    }
+    &_panes {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      margin: 0px;
+    }
+    &_item {
+      &_boxImage img {
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+}

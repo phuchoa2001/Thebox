@@ -1,0 +1,31 @@
+.cta {
+  background: #f6f8f7;
+  padding: 60px 0px;
+  &_title {
+    margin-bottom: 20px;
+  }
+  &_desc {
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+  }
+  &_center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 38px;
+  }
+}
+
+@media only screen and (max-width: 539px) {
+  /* PC Điện thoại nhỏ hơn 539px */
+  .cta {
+    padding: 20px 0px;
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 719px) {
+  /* Điện thoại màn hình lớn thua IPAD */
+  .cta {
+    padding: 50px 0px;
+  }
+}

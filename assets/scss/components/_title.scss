@@ -1,0 +1,71 @@
+.title {
+  &_main {
+    margin-bottom: 2rem;
+    color: $black;
+    font: {
+      size: 7.2rem;
+      weight: 700;
+    }
+    line-height: 8.4rem;
+    color: #292e3d;
+  }
+  &_heading {
+    font: {
+      size: 3.6rem;
+      weight: 700;
+    }
+    line-height: 4.2rem;
+    text-align: center;
+  }
+}
+
+// animation
+
+@media only screen and (max-width: 539px) {
+  .title {
+    &_main {
+      text-align: center;
+      width: 100%;
+      font: {
+        size: 2rem;
+        weight: 700;
+      }
+      line-height: 3rem;
+    }
+    &_heading {
+      font: {
+        size: 2.5rem;
+        weight: 700;
+      }
+      line-height: 3.5rem;
+    }
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 719px) {
+  /* Điện thoại màn hình lớn thua IPAD */
+  .title {
+    &_main {
+      text-align: center;
+      width: 100%;
+      font: {
+        size: 3rem;
+        weight: 700;
+      }
+      line-height: 4rem;
+    }
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+  /* IPAD  */
+  .title {
+    &_main {
+      text-align: center;
+      width: 100%;
+      font: {
+        size: 5rem;
+        weight: 700;
+      }
+      line-height: 6rem;
+    }
+  }
+}

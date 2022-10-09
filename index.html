@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <title>TheBox</title>
+    <meta
+      name="description"
+      content="Xây dựng trang Single Page về chủ đề xây dựng . thử nghiệm animation bằng thư viện"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="TheBox" />
+    <meta
+      property="og:description"
+      content="Xây dựng trang Single Page về chủ đề xây dựng . thử nghiệm animation bằng thư viện"
+    />
+    <meta property="og:image" content="https://res.cloudinary.com/xoanen/image/upload/v1665280600/hero_vnrddf.png" />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="TheBox" />
+    <meta
+      property="twitter:description"
+      content="Xây dựng trang Single Page về chủ đề xây dựng . thử nghiệm animation bằng thư viện"
+    />
+    <meta property="twitter:image" content="https://res.cloudinary.com/xoanen/image/upload/v1665280600/hero_vnrddf.png" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <header class="header">
+          <a href="/" class="header_link">
+            <div class="header_logo">
+              <img
+                src="./assets/images/page/logo/logo.png"
+                class="header_img"
+                alt="logo"
+              />
+              <h3 class="header_title">TheBox</h3>
+            </div>
+          </a>
+          <div class="header_close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </div>
+          <div class="header_iconMenu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 9h16.5m-16.5 6.75h16.5"
+              />
+            </svg>
+          </div>
+          <div class="menu">
+            <ul class="menu_list">
+              <li><a href="#hero" class="menu_link">Home</a></li>
+              <li><a href="#about" class="menu_link">About Us</a></li>
+              <li><a href="#projects" class="menu_link">Projects</a></li>
+              <li><a href="#services" class="menu_link">Services</a></li>
+              <li>
+                <a href="#cta" class="menu_link menu_link-active">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </header>
+      </div>
+      <section class="hero" id="hero">
+        <img src="./assets/images/page/hero/hero.jpg" class="hero_image" alt="hero" />
+        <div class="hero_box">
+          <h3 class="title_main" data-aos="fade-right" data-aos-duration="700">
+            Building things is our mission.
+          </h3>
+        </div>
+        <div class="hero_feature" data-aos="fade-left" data-aos-duration="700">
+          <div class="hero_feature_top">
+            <h3 class="hero_feature_title">Feature Projects</h3>
+            <p class="hero_feature_desc">
+              The National University of Architecture
+            </p>
+          </div>
+          <div class="hero_feature_bottom">
+            <div class="hero_feature_btn">
+              <svg
+                width="27"
+                height="18"
+                viewBox="0 0 27 18"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                class="hero_feature_icon hero_feature_icon-back"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M26.5 9C26.5 8.74955 26.4022 8.50936 26.228 8.33227C26.0539 8.15518 25.8177 8.05569 25.5715 8.05569L3.6716 8.05569L9.51566 2.11408C9.60198 2.02628 9.67047 1.92205 9.71719 1.80733C9.76391 1.69262 9.78796 1.56967 9.78796 1.4455C9.78796 1.32134 9.76391 1.19839 9.71719 1.08368C9.67047 0.968962 9.60198 0.86473 9.51566 0.776931C9.42933 0.689133 9.32684 0.619488 9.21405 0.571972C9.10125 0.524456 8.98036 0.5 8.85827 0.5C8.73618 0.5 8.61529 0.524456 8.50249 0.571972C8.3897 0.619488 8.28721 0.689133 8.20088 0.776932L0.772785 8.33143C0.686316 8.41914 0.617712 8.52335 0.570903 8.63808C0.524094 8.7528 0.5 8.87579 0.5 9C0.5 9.12421 0.524094 9.2472 0.570903 9.36192C0.617712 9.47665 0.686316 9.58085 0.772785 9.66857L8.20088 17.2231C8.28721 17.3109 8.3897 17.3805 8.50249 17.428C8.61529 17.4755 8.73618 17.5 8.85827 17.5C8.98036 17.5 9.10125 17.4755 9.21405 17.428C9.32684 17.3805 9.42933 17.3109 9.51566 17.2231C9.60198 17.1353 9.67047 17.031 9.71719 16.9163C9.76391 16.8016 9.78795 16.6787 9.78795 16.5545C9.78795 16.4303 9.76391 16.3074 9.71719 16.1927C9.67047 16.078 9.60198 15.9737 9.51566 15.8859L3.6716 9.94431L25.5715 9.94431C25.8177 9.94431 26.0539 9.84482 26.228 9.66773C26.4022 9.49064 26.5 9.25045 26.5 9Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <p class="hero_feature_text">Back</p>
+            </div>
+            <div class="hero_feature_btn">
+              <p class="hero_feature_text">Next</p>
+              <svg
+                width="26"
+                height="18"
+                viewBox="0 0 26 18"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                class="hero_feature_icon hero_feature_icon-next"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M-1.15156e-06 9C-1.17383e-06 9.25045 0.0978229 9.49063 0.271952 9.66773C0.446082 9.84482 0.682254 9.94431 0.928509 9.94431L22.8284 9.94431L16.9843 15.8859C16.898 15.9737 16.8295 16.078 16.7828 16.1927C16.7361 16.3074 16.712 16.4303 16.712 16.5545C16.712 16.6787 16.7361 16.8016 16.7828 16.9163C16.8295 17.031 16.898 17.1353 16.9843 17.2231C17.0707 17.3109 17.1732 17.3805 17.286 17.428C17.3987 17.4755 17.5196 17.5 17.6417 17.5C17.7638 17.5 17.8847 17.4755 17.9975 17.428C18.1103 17.3805 18.2128 17.3109 18.2991 17.2231L25.7272 9.66857C25.8137 9.58086 25.8823 9.47665 25.9291 9.36192C25.9759 9.2472 26 9.12421 26 9C26 8.87579 25.9759 8.7528 25.9291 8.63808C25.8823 8.52335 25.8137 8.41915 25.7272 8.33143L18.2991 0.776933C18.2128 0.689136 18.1103 0.619489 17.9975 0.571973C17.8847 0.524457 17.7638 0.500001 17.6417 0.500001C17.5196 0.500001 17.3988 0.524457 17.286 0.571973C17.1732 0.619489 17.0707 0.689136 16.9843 0.776933C16.898 0.864732 16.8295 0.968963 16.7828 1.08368C16.7361 1.19839 16.712 1.32134 16.712 1.4455C16.712 1.56967 16.7361 1.69262 16.7828 1.80734C16.8295 1.92205 16.898 2.02628 16.9843 2.11408L22.8284 8.05569L0.92851 8.05569C0.682254 8.05569 0.446082 8.15518 0.271952 8.33227C0.097823 8.50936 -1.1293e-06 8.74955 -1.15156e-06 9Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reasons">
+        <div class="container">
+          <h3 class="title_heading reasons_title">Our Reputation</h3>
+          <div class="reasons_list">
+            <div
+              class="reasons_item"
+              data-aos="fade-up"
+              data-aos-duration="700"
+            >
+              <svg
+                width="38"
+                height="38"
+                viewBox="0 0 38 38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="reasons_icon"
+              >
+                <path
+                  d="M34 12.3333C34.884 12.3333 35.7319 12.6845 36.357 13.3096C36.9821 13.9348 37.3333 14.7826 37.3333 15.6667V22.3333C37.3333 23.2174 36.9821 24.0652 36.357 24.6904C35.7319 25.3155 34.884 25.6667 34 25.6667H32.23C31.8236 28.8888 30.2554 31.852 27.8195 34C25.3837 36.148 22.2476 37.3333 19 37.3333V34C21.6521 34 24.1957 32.9464 26.071 31.0711C27.9464 29.1957 29 26.6522 29 24V14C29 11.3478 27.9464 8.80429 26.071 6.92893C24.1957 5.05357 21.6521 4 19 4C16.3478 4 13.8043 5.05357 11.9289 6.92893C10.0535 8.80429 8.99996 11.3478 8.99996 14V25.6667H3.99996C3.1159 25.6667 2.26806 25.3155 1.64294 24.6904C1.01782 24.0652 0.666626 23.2174 0.666626 22.3333V15.6667C0.666626 14.7826 1.01782 13.9348 1.64294 13.3096C2.26806 12.6845 3.1159 12.3333 3.99996 12.3333H5.76996C6.17668 9.11149 7.74509 6.14878 10.1809 4.00112C12.6167 1.85346 15.7525 0.668457 19 0.668457C22.2474 0.668457 25.3832 1.85346 27.819 4.00112C30.2548 6.14878 31.8232 9.11149 32.23 12.3333H34ZM11.9333 25.3083L13.7 22.4817C15.2884 23.4767 17.1256 24.003 19 24C20.8743 24.003 22.7115 23.4767 24.3 22.4817L26.0666 25.3083C23.9487 26.6352 21.4992 27.3372 19 27.3333C16.5007 27.3372 14.0512 26.6352 11.9333 25.3083Z"
+                  fill="#F9995D"
+                />
+              </svg>
+              <h3 class="reasons_list_title">Best Services</h3>
+              <p class="reasons_list_desc">
+                Nullam senectus porttitor in eget. Eget rutrum leo interdum.
+              </p>
+            </div>
+            <div
+              class="reasons_item"
+              data-aos="fade-up"
+              data-aos-duration="700"
+            >
+              <svg
+                width="38"
+                height="38"
+                viewBox="0 0 38 38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="reasons_icon"
+              >
+                <path
+                  d="M34 12.3333C34.884 12.3333 35.7319 12.6845 36.357 13.3096C36.9821 13.9348 37.3333 14.7826 37.3333 15.6667V22.3333C37.3333 23.2174 36.9821 24.0652 36.357 24.6904C35.7319 25.3155 34.884 25.6667 34 25.6667H32.23C31.8236 28.8888 30.2554 31.852 27.8195 34C25.3837 36.148 22.2476 37.3333 19 37.3333V34C21.6521 34 24.1957 32.9464 26.071 31.0711C27.9464 29.1957 29 26.6522 29 24V14C29 11.3478 27.9464 8.80429 26.071 6.92893C24.1957 5.05357 21.6521 4 19 4C16.3478 4 13.8043 5.05357 11.9289 6.92893C10.0535 8.80429 8.99996 11.3478 8.99996 14V25.6667H3.99996C3.1159 25.6667 2.26806 25.3155 1.64294 24.6904C1.01782 24.0652 0.666626 23.2174 0.666626 22.3333V15.6667C0.666626 14.7826 1.01782 13.9348 1.64294 13.3096C2.26806 12.6845 3.1159 12.3333 3.99996 12.3333H5.76996C6.17668 9.11149 7.74509 6.14878 10.1809 4.00112C12.6167 1.85346 15.7525 0.668457 19 0.668457C22.2474 0.668457 25.3832 1.85346 27.819 4.00112C30.2548 6.14878 31.8232 9.11149 32.23 12.3333H34ZM11.9333 25.3083L13.7 22.4817C15.2884 23.4767 17.1256 24.003 19 24C20.8743 24.003 22.7115 23.4767 24.3 22.4817L26.0666 25.3083C23.9487 26.6352 21.4992 27.3372 19 27.3333C16.5007 27.3372 14.0512 26.6352 11.9333 25.3083Z"
+                  fill="#F9995D"
+                />
+              </svg>
+              <h3 class="reasons_list_title">Best Teams</h3>
+              <p class="reasons_list_desc">
+                Cursus semper tellus volutpat aliquet lacus.
+              </p>
+            </div>
+            <div
+              class="reasons_item"
+              data-aos="fade-up"
+              data-aos-duration="700"
+            >
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="reasons_icon"
+              >
+                <path
+                  d="M36.3167 28.4333L27.0667 19.1833L29.6833 16.5667L23.4333 10.3167L20.8167 12.9333L11.5667 3.68332L3.68335 11.5667L12.9333 20.8167L5.00002 28.75V35H11.25L19.1833 27.0667L28.4333 36.3167L36.3167 28.4333V28.4333ZM15.3 18.45L8.40002 11.5667L11.5667 8.39999L13.6833 10.5167L11.7 12.5L14.05 14.85L16.0333 12.8667L18.45 15.2833L15.3 18.45V18.45ZM21.55 24.7L24.7167 21.5333L27.1334 23.95L25.15 25.9333L27.5 28.2833L29.4833 26.3L31.6 28.4167L28.4333 31.5833L21.55 24.7V24.7ZM25.2217 8.53832L29.4517 4.30665L35.6983 10.5533L31.4684 14.785L25.2217 8.53832Z"
+                  fill="#F9995D"
+                />
+              </svg>
+
+              <h3 class="reasons_list_title">Best Designs</h3>
+              <p class="reasons_list_desc">
+                Ultricies at ipsum nunc, tristique nam lectus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container about_box">
+          <div
+            class="about_image"
+            data-aos="fade-right"
+            data-aos-duration="700"
+          >
+            <img src="./assets/images/page/about/user.jpg" />
+          </div>
+          <div class="about_info" data-aos="fade-left" data-aos-duration="700">
+            <h3 class="title_heading about_info_title">About us</h3>
+            <p class="about_info_text">
+              For more than 30 years we have been delivering world-class
+              construction and we’ve built many lasting relationships along the
+              way.
+            </p>
+            <p class="about_info_text">
+              We’ve matured into an industry leader and trusted resource for
+              those seeking quality, innovation and reliability when building in
+              the U.S.
+            </p>
+            <a href="#" class="button about_info_button button-default"
+              >More on Our History</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <h3 class="title_heading services_title">Services</h3>
+        <div class="container">
+          <div class="services_list">
+            <div
+              class="services_item"
+              data-aos="flip-right"
+              data-aos-duration="700"
+            >
+              <div class="services_boxIcon">
+                <svg
+                  width="33"
+                  height="34"
+                  viewBox="0 0 33 34"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="services_icon"
+                >
+                  <path
+                    d="M29.1517 0.333374H12.5167C10.665 0.333374 9.16668 1.83171 9.16668 3.68337V13.0784L1.33001 20.815C1.0952 21.0473 0.934678 21.344 0.868812 21.6676C0.802946 21.9913 0.834707 22.3271 0.960063 22.6327C1.08542 22.9382 1.29872 23.1996 1.5729 23.3837C1.84707 23.5678 2.16976 23.6663 2.50001 23.6667V32C2.50001 32.4421 2.6756 32.866 2.98816 33.1786C3.30073 33.4911 3.72465 33.6667 4.16668 33.6667H30.8333C31.2754 33.6667 31.6993 33.4911 32.0119 33.1786C32.3244 32.866 32.5 32.4421 32.5 32V3.68171C32.5 1.83171 31.0033 0.333374 29.1517 0.333374ZM15.7033 22.185V30.3334H5.83334V21.0534L10.8117 16.1384L15.7033 21.1434V22.185V22.185ZM19.1667 12H15.8333V8.66671H19.1667V12ZM25.8333 25.3334H22.5V22H25.8333V25.3334ZM25.8333 18.6667H22.5V15.3334H25.8333V18.6667ZM25.8333 12H22.5V8.66671H25.8333V12Z"
+                    fill="currentColor"
+                    class="path"
+                  />
+                </svg>
+              </div>
+
+              <h3 class="services_list_title">Construction</h3>
+            </div>
+            <div
+              class="services_item"
+              data-aos="flip-left"
+              data-aos-duration="700"
+            >
+              <div class="services_boxIcon">
+                <svg
+                  width="33"
+                  height="34"
+                  viewBox="0 0 33 34"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M28 2.00004C26.8952 2.00093 25.8359 2.4402 25.0547 3.22141C24.2735 4.00262 23.8342 5.06191 23.8333 6.16671C23.8333 6.76171 23.9633 7.32671 24.19 7.84171L20.9317 11.5067C19.8248 10.7427 18.5116 10.3334 17.1667 10.3334C15.9333 10.3334 14.7933 10.6934 13.8017 11.2767L10.0117 7.48838L9.97334 7.52671C10.3 6.86338 10.5 6.12504 10.5 5.33338C10.5 4.34447 10.2068 3.37777 9.65735 2.55553C9.10794 1.73328 8.32705 1.09242 7.41342 0.713979C6.49979 0.33554 5.49446 0.236524 4.52455 0.42945C3.55465 0.622376 2.66373 1.09858 1.96447 1.79784C1.26521 2.49711 0.789002 3.38802 0.596076 4.35792C0.40315 5.32783 0.502166 6.33316 0.880605 7.24679C1.25904 8.16042 1.89991 8.94132 2.72215 9.49072C3.5444 10.0401 4.5111 10.3334 5.5 10.3334C6.29167 10.3334 7.02834 10.1334 7.69334 9.80671L7.655 9.84504L11.445 13.6334C10.8327 14.6501 10.5063 15.8132 10.5 17C10.5 18.6617 11.1333 20.165 12.1417 21.335L7.84667 25.6284C7.36528 25.4357 6.85185 25.3356 6.33334 25.3334C4.03667 25.3334 2.16667 27.2017 2.16667 29.5C2.16667 31.7984 4.03667 33.6667 6.33334 33.6667C8.63 33.6667 10.5 31.7984 10.5 29.5C10.5 28.965 10.39 28.4567 10.205 27.985L14.935 23.255C15.6367 23.505 16.38 23.6667 17.1667 23.6667C20.8433 23.6667 23.8333 20.6767 23.8333 17C23.8333 15.94 23.5617 14.9517 23.12 14.06L26.6483 10.0884C27.075 10.235 27.525 10.3334 28 10.3334C30.2983 10.3334 32.1667 8.46504 32.1667 6.16671C32.1667 3.86838 30.2983 2.00004 28 2.00004ZM17.1667 20.3334C15.3283 20.3334 13.8333 18.8384 13.8333 17C13.8333 15.1617 15.3283 13.6667 17.1667 13.6667C19.005 13.6667 20.5 15.1617 20.5 17C20.5 18.8384 19.005 20.3334 17.1667 20.3334Z"
+                    fill="white"
+                    class="path"
+                  />
+                </svg>
+              </div>
+
+              <h3 class="services_list_title">Construction</h3>
+            </div>
+            <div
+              class="services_item"
+              data-aos="flip-right"
+              data-aos-duration="700"
+            >
+              <div class="services_boxIcon">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.3333 5.99995H19.3333L24.8167 0.499955C24.9716 0.343741 25.1559 0.219751 25.359 0.135136C25.5621 0.0505217 25.78 0.00695801 26 0.00695801C26.22 0.00695801 26.4379 0.0505217 26.641 0.135136C26.8441 0.219751 27.0284 0.343741 27.1833 0.499955L31.4833 4.81662C31.7938 5.12889 31.968 5.55131 31.968 5.99162C31.968 6.43193 31.7938 6.85435 31.4833 7.16662L27.6667 11H14.3333V14.3333C14.3333 14.7753 14.1577 15.1992 13.8452 15.5118C13.5326 15.8244 13.1087 16 12.6667 16C12.2246 16 11.8007 15.8244 11.4882 15.5118C11.1756 15.1992 11 14.7753 11 14.3333V9.33329C11 8.44923 11.3512 7.60139 11.9763 6.97626C12.6014 6.35114 13.4493 5.99995 14.3333 5.99995ZM4.33333 14.3333V21L0.516667 24.8166C0.206249 25.1289 0.0320129 25.5513 0.0320129 25.9916C0.0320129 26.4319 0.206249 26.8544 0.516667 27.1666L4.81667 31.4833C4.97161 31.6395 5.15594 31.7635 5.35904 31.8481C5.56214 31.9327 5.77998 31.9763 6 31.9763C6.22002 31.9763 6.43786 31.9327 6.64096 31.8481C6.84406 31.7635 7.0284 31.6395 7.18333 31.4833L14.3333 24.3333H21C21.442 24.3333 21.866 24.1577 22.1785 23.8451C22.4911 23.5326 22.6667 23.1086 22.6667 22.6666V21H24.3333C24.7754 21 25.1993 20.8244 25.5118 20.5118C25.8244 20.1992 26 19.7753 26 19.3333V17.6666H27.6667C28.1087 17.6666 28.5326 17.491 28.8452 17.1785C29.1577 16.8659 29.3333 16.442 29.3333 16V14.3333H17.6667V16C17.6667 16.884 17.3155 17.7319 16.6904 18.357C16.0652 18.9821 15.2174 19.3333 14.3333 19.3333H11C10.1159 19.3333 9.2681 18.9821 8.64298 18.357C8.01786 17.7319 7.66667 16.884 7.66667 16V11L4.33333 14.3333Z"
+                    fill="#292E3D"
+                    class="path"
+                  />
+                </svg>
+              </div>
+
+              <h3 class="services_list_title">Construction</h3>
+            </div>
+            <div
+              class="services_item"
+              data-aos="flip-left"
+              data-aos-duration="700"
+            >
+              <div class="services_boxIcon">
+                <svg
+                  width="35"
+                  height="28"
+                  viewBox="0 0 35 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M27.5 20.6667H24.1667V19.0001H10.8334V20.6667H7.50004V19.0001H0.833374V27.3334H34.1667V19.0001H27.5V20.6667ZM30.8334 7.33341H25.8334V4.00008C25.8334 2.16675 24.3334 0.666748 22.5 0.666748H12.5C10.6667 0.666748 9.16671 2.16675 9.16671 4.00008V7.33341H4.16671C2.33337 7.33341 0.833374 8.83341 0.833374 10.6667V17.3334H7.50004V14.0001H10.8334V17.3334H24.1667V14.0001H27.5V17.3334H34.1667V10.6667C34.1667 8.83341 32.6667 7.33341 30.8334 7.33341ZM22.5 7.33341H12.5V4.00008H22.5V7.33341Z"
+                    fill="white"
+                    class="path"
+                  />
+                </svg>
+              </div>
+
+              <h3 class="services_list_title">Construction</h3>
+            </div>
+            <div
+              class="services_item"
+              data-aos="flip-right"
+              data-aos-duration="700"
+            >
+              <div class="services_boxIcon">
+                <svg
+                  width="19"
+                  height="30"
+                  viewBox="0 0 19 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.0999756 26.3L0.516642 30L3.21664 27.4333L7.83331 14.7667C6.69998 14.4833 5.69997 13.9167 4.88331 13.1333L0.0999756 26.3ZM14.1166 13.1333C13.3 13.9167 12.2833 14.4833 11.1666 14.7667L15.7833 27.4333L18.4833 30L18.9166 26.3L14.1166 13.1333V13.1333ZM14.4 9.33333C14.9 6.73333 13.4 4.43333 11.1666 3.63333V1.66667C11.1666 0.75 10.4166 0 9.49998 0C8.58331 0 7.83331 0.75 7.83331 1.66667V3.63333C5.89998 4.33333 4.49998 6.16667 4.49998 8.33333C4.49998 11.4 7.26664 13.8333 10.4333 13.25C12.4 12.8833 14.0166 11.3 14.4 9.33333V9.33333ZM9.49998 10C8.58331 10 7.83331 9.25 7.83331 8.33333C7.83331 7.41667 8.58331 6.66667 9.49998 6.66667C10.4166 6.66667 11.1666 7.41667 11.1666 8.33333C11.1666 9.25 10.4166 10 9.49998 10Z"
+                    fill="#292E3D"
+                    class="path"
+                  />
+                </svg>
+              </div>
+
+              <h3 class="services_list_title">Construction</h3>
+            </div>
+            <div
+              class="services_item"
+              data-aos="flip-left"
+              data-aos-duration="700"
+            >
+              <div class="services_boxIcon">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M35 23.3333C35 22.4167 34.25 21.6667 33.3333 21.6667H30V25H33.3333C34.25 25 35 24.25 35 23.3333ZM33.3333 28.3333H30V31.6667H33.3333C34.25 31.6667 35 30.9167 35 30C35 29.0833 34.25 28.3333 33.3333 28.3333ZM20 23.3333H16.6667V30H20C20 31.8333 21.5 33.3333 23.3333 33.3333H28.3333V20H23.3333C21.5 20 20 21.5 20 23.3333Z"
+                    fill="white"
+                    class="path"
+                  />
+                  <path
+                    d="M8.33333 21.6667C8.33333 19.8334 9.83333 18.3334 11.6667 18.3334H14.1667C17.3833 18.3334 20 15.7167 20 12.5001C20 9.28341 17.3833 6.66675 14.1667 6.66675H8.33333C7.41667 6.66675 6.66667 7.41675 6.66667 8.33341C6.66667 9.25008 7.41667 10.0001 8.33333 10.0001H14.1667C15.55 10.0001 16.6667 11.1167 16.6667 12.5001C16.6667 13.8834 15.55 15.0001 14.1667 15.0001H11.6667C7.98333 15.0001 5 17.9834 5 21.6667C5 25.3501 7.98333 28.3334 11.6667 28.3334H15V25.0001H11.6667C9.83333 25.0001 8.33333 23.5001 8.33333 21.6667Z"
+                    fill="white"
+                    class="path"
+                  />
+                </svg>
+              </div>
+
+              <h3 class="services_list_title">Construction</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="stats">
+        <div class="container">
+          <div class="stats_box">
+            <div class="stats_data">
+              <div
+                class="stats_wrapper"
+                data-aos="fade-right"
+                data-aos-duration="700"
+              >
+                <div class="stats_client stats_tags">
+                  <h3>84</h3>
+                  <div class="stats_tags_box">
+                    <div class="stats_tags_color"></div>
+                    <p class="stats_tags_title">Happy Clients</p>
+                  </div>
+                  <div class="stats_tags_icon stats_client_icon">
+                    <img src="./assets/images/page/stats/icon1.png" />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="stats_wrapper"
+                data-aos="fade-left"
+                data-aos-duration="700"
+              >
+                <div class="stats_projects stats_tags">
+                  <h3>123</h3>
+                  <div class="stats_tags_box">
+                    <div class="stats_tags_color"></div>
+                    <p class="stats_tags_title">Projects Completed</p>
+                  </div>
+                  <div class="stats_tags_icon stats_projects_icon">
+                    <img src="./assets/images/page/stats/icon2.png" />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="stats_wrapper"
+                data-aos="fade-right"
+                data-aos-duration="700"
+              >
+                <div class="stats_awardsWin stats_tags">
+                  <h3>37</h3>
+                  <div class="stats_tags_box">
+                    <div class="stats_tags_color"></div>
+                    <p class="stats_tags_title">Awards Win</p>
+                  </div>
+                  <div class="stats_tags_icon stats_awardsWin_icon">
+                    <img src="./assets/images/page/stats/icon3.png" />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="stats_wrapper"
+                data-aos="fade-left"
+                data-aos-duration="700"
+              >
+                <div class="stats_business stats_tags">
+                  <h3>30</h3>
+                  <div class="stats_tags_box">
+                    <div class="stats_tags_color"></div>
+                    <p class="stats_tags_title">Years in Business</p>
+                  </div>
+                  <div class="stats_tags_icon stats_business_icon">
+                    <img src="./assets/images/page/stats/icon4.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="stats_info"
+              data-aos="fade-right"
+              data-aos-duration="700"
+            >
+              <h3 class="stats_info_title">30 Years Experience</h3>
+              <p class="stats_info_desc">
+                Our company has been the leading provided construction services
+                to clients throughout the USA since 1988.
+              </p>
+              <a href="#" class="button button-primary stats_info_button">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ads">
+        <div class="container ads_container">
+          <div class="ads_left">
+            <h3 class="ads_title title_heading">
+              Free consultation with exceptional quality
+            </h3>
+            <p class="ads_contact">
+              Just one call away:
+              <a href="tel:+8411022703" class="ads_link">+84 1102 2703</a>
+            </p>
+          </div>
+          <div class="ads_right">
+            <a href="#" class="button ads_button button-noBg"
+              >Get your consultation</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <div class="container">
+          <h3 class="title_heading projects_title">Projects</h3>
+          <div class="projects_tabs">
+            <div class="projects_panes">
+              <div class="projects_pane projects_pane-active">
+                <p>All</p>
+              </div>
+              <div class="projects_pane">
+                <p>Commercial</p>
+              </div>
+              <div class="projects_pane">
+                <p>Residential</p>
+              </div>
+              <div class="projects_pane">
+                <p>Other</p>
+              </div>
+            </div>
+            <div class="projects_list">
+              <div class="projects_item">
+                <div class="projects_item_wrapper">
+                  <div
+                    class="projects_item_card"
+                    data-aos="flip-up"
+                    data-aos-duration="700"
+                  >
+                    <div class="projects_item_boxImage">
+                      <img src="./assets/images/page/projects/img1.jpg" />
+                    </div>
+                    <div class="projects_item_footer">
+                      <h3 class="projects_item_title">Wildstone Infra Hotel</h3>
+                      <p class="projects_item_address">
+                        2715 Ash Dr. San Jose, South Dakota
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="projects_item_card"
+                    data-aos="flip-down"
+                    data-aos-duration="700"
+                  >
+                    <div class="projects_item_boxImage">
+                      <img src="./assets/images/page/projects/img2.jpg" />
+                    </div>
+                    <div class="projects_item_footer">
+                      <h3 class="projects_item_title">Wish Stone Building</h3>
+                      <p class="projects_item_address">
+                        2972 Westheimer Rd. Santa Ana, Illinois
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="projects_item_card"
+                    data-aos="flip-up"
+                    data-aos-duration="700"
+                  >
+                    <div class="projects_item_boxImage">
+                      <img src="./assets/images/page/projects/img3.jpg" />
+                    </div>
+                    <div class="projects_item_footer">
+                      <h3 class="projects_item_title">
+                        Mr. Parkinston’s House
+                      </h3>
+                      <p class="projects_item_address">
+                        3517 W. Gray St. Utica, Pennsylvania
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="projects_item_card"
+                    data-aos="flip-down"
+                    data-aos-duration="700"
+                  >
+                    <div class="projects_item_boxImage">
+                      <img src="./assets/images/page/projects/img4.jpg" />
+                    </div>
+                    <div class="projects_item_footer">
+                      <h3 class="projects_item_title">Oregano Height</h3>
+                      <p class="projects_item_address">
+                        2464 Royal Ln. Mesa, New Jersey
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="projects_item_boxBtn">
+                  <a href="#" class="button projects_item_button">
+                    <svg
+                      width="26"
+                      height="18"
+                      viewBox="0 0 26 18"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="projects_item_back"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M26 9C26 8.74955 25.9022 8.50936 25.728 8.33227C25.5539 8.15518 25.3177 8.05569 25.0715 8.05569H3.1716L9.01566 2.11408C9.10198 2.02628 9.17047 1.92205 9.21719 1.80733C9.26391 1.69262 9.28796 1.56967 9.28796 1.4455C9.28796 1.32134 9.26391 1.19839 9.21719 1.08368C9.17047 0.968962 9.10198 0.86473 9.01566 0.776932C8.92933 0.689133 8.82684 0.619488 8.71405 0.571972C8.60125 0.524456 8.48036 0.5 8.35827 0.5C8.23618 0.5 8.11529 0.524456 8.00249 0.571972C7.8897 0.619488 7.78721 0.689133 7.70088 0.776932L0.272785 8.33143C0.186316 8.41914 0.117712 8.52335 0.0709035 8.63808C0.0240945 8.7528 0 8.87579 0 9C0 9.12421 0.0240945 9.2472 0.0709035 9.36192C0.117712 9.47665 0.186316 9.58085 0.272785 9.66857L7.70088 17.2231C7.78721 17.3109 7.8897 17.3805 8.00249 17.428C8.11529 17.4755 8.23618 17.5 8.35827 17.5C8.48036 17.5 8.60125 17.4755 8.71405 17.428C8.82684 17.3805 8.92933 17.3109 9.01566 17.2231C9.10198 17.1353 9.17047 17.031 9.21719 16.9163C9.26391 16.8016 9.28796 16.6787 9.28796 16.5545C9.28796 16.4303 9.26391 16.3074 9.21719 16.1927C9.17047 16.078 9.10198 15.9737 9.01566 15.8859L3.1716 9.94431H25.0715C25.3177 9.94431 25.5539 9.84482 25.728 9.66773C25.9022 9.49064 26 9.25045 26 9Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <p>Back</p>
+                  </a>
+                  <div class="projects_item_listDot">
+                    <div
+                      class="projects_item_dot projects_item_dot-active"
+                    ></div>
+                    <div class="projects_item_dot"></div>
+                    <div class="projects_item_dot"></div>
+                    <div class="projects_item_dot"></div>
+                    <div class="projects_item_dot"></div>
+                  </div>
+                  <a href="#" class="button projects_item_button">
+                    <p>Next</p>
+                    <svg
+                      width="26"
+                      height="18"
+                      viewBox="0 0 26 18"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="projects_item_next"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M-1.16426e-06 9C-1.18615e-06 9.25045 0.0978229 9.49063 0.271952 9.66773C0.446082 9.84482 0.682254 9.94431 0.928509 9.94431L22.8284 9.94431L16.9843 15.8859C16.898 15.9737 16.8295 16.078 16.7828 16.1927C16.7361 16.3074 16.712 16.4303 16.712 16.5545C16.712 16.6787 16.7361 16.8016 16.7828 16.9163C16.8295 17.031 16.898 17.1353 16.9843 17.2231C17.0707 17.3109 17.1732 17.3805 17.286 17.428C17.3987 17.4755 17.5196 17.5 17.6417 17.5C17.7638 17.5 17.8847 17.4755 17.9975 17.428C18.1103 17.3805 18.2128 17.3109 18.2991 17.2231L25.7272 9.66857C25.8137 9.58086 25.8823 9.47665 25.9291 9.36192C25.9759 9.2472 26 9.12421 26 9C26 8.87579 25.9759 8.7528 25.9291 8.63808C25.8823 8.52335 25.8137 8.41915 25.7272 8.33143L18.2991 0.776933C18.2128 0.689136 18.1103 0.619489 17.9975 0.571973C17.8847 0.524457 17.7638 0.500001 17.6417 0.500001C17.5196 0.500001 17.3988 0.524457 17.286 0.571973C17.1732 0.619489 17.0707 0.689136 16.9843 0.776933C16.898 0.864732 16.8295 0.968963 16.7828 1.08368C16.7361 1.19839 16.712 1.32134 16.712 1.4455C16.712 1.56967 16.7361 1.69262 16.7828 1.80734C16.8295 1.92205 16.898 2.02628 16.9843 2.11408L22.8284 8.05569L0.92851 8.05569C0.682254 8.05569 0.446082 8.15518 0.271952 8.33227C0.097823 8.50936 -1.14236e-06 8.74955 -1.16426e-06 9Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="cta"
+        id="cta"
+        data-aos="fade-right"
+        data-aos-offset="500"
+        data-aos-duration="500"
+      >
+        <div class="container">
+          <h3 class="title_heading cta_title">What can us do for you?</h3>
+          <div class="cta_center">
+            <p class="cta_desc">
+              We are ready to work on a project of any complexity, whether it’s
+              commercial or residential.
+            </p>
+          </div>
+          <form class="form">
+            <div class="form_gird">
+              <div class="form_item">
+                <input
+                  type="text"
+                  class="form_input form_input-rule"
+                  placeholder=" "
+                />
+                <div class="form_label">
+                  Your Name<span class="form_rules">*</span>
+                </div>
+              </div>
+              <div class="form_item">
+                <input
+                  type="text"
+                  class="form_input form_input-rule"
+                  placeholder=" "
+                />
+                <div class="form_label">
+                  Email<span class="form_rules">*</span>
+                </div>
+              </div>
+              <div class="form_item">
+                <input
+                  type="text"
+                  class="form_input form_input-rule"
+                  placeholder=" "
+                />
+                <div class="form_label">
+                  Reason for Contacting<span class="form_rules">*</span>
+                </div>
+              </div>
+              <div class="form_item">
+                <input
+                  type="text"
+                  class="form_input form_input"
+                  placeholder=" "
+                />
+                <div class="form_label">Phone</div>
+              </div>
+            </div>
+            <div class="form_item">
+              <textarea
+                type="text"
+                class="form_input form_textarea form_input-rule"
+                placeholder=" "
+              ></textarea>
+              <div class="form_label">
+                Your Name<span class="form_rules">*</span>
+              </div>
+            </div>
+            <p class="form_note">
+              <span class="form_rules">*</span> indicates a required field
+            </p>
+            <div class="form_wrapper">
+              <button class="button button-primary form_button">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container footer_container">
+          <div class="footer_left">
+            <div class="footer_contant">
+              <a href="#" class="footer_link"
+                ><span>Address:</span> 6391 Elgin St. Celina, Delaware 10299</a
+              >
+              <a href="#" class="footer_link"
+                ><span>Phone:</span> +84 1102 2703</a
+              >
+              <a href="#" class="footer_link"
+                ><span>Email:</span> hello@thebox.com</a
+              >
+            </div>
+            <a href="/" class="header_link">
+              <div class="header_logo footer_logo">
+                <img
+                  src="./assets/images/page/logo/logo.png"
+                  class="header_img"
+                  alt="logo"
+                />
+                <h3 class="header_title">TheBox</h3>
+              </div>
+            </a>
+          </div>
+          <div class="footer_right">
+            <h3 class="footer_right_title">Newsletter:</h3>
+            <div class="footer_right_send">
+              <input
+                type="text"
+                class="footer_right_input"
+                placeholder="Your email here"
+              />
+              <button class="footer_right_button">Subscribe</button>
+            </div>
+
+            <div class="footer_socialNetwork">
+              <h3 class="footer_right_title">Social:</h3>
+              <div class="footer_list">
+                <a href="#facebook">
+                  <img
+                    src="./assets/images/page/footer/icon_facebook.png"
+                    class="footer_icon"
+                  />
+                </a>
+                <a href="#linkedin">
+                  <img
+                    src="./assets/images/page/footer/icon_linkedin.png"
+                    class="footer_icon"
+                  />
+                </a>
+                <a href="#twitter">
+                  <img
+                    src="./assets/images/page/footer/icon_twitter.png"
+                    class="footer_icon"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_copyright">
+          <div class="container">
+            <p class="footer_copyright_text">
+              TheBox Company © 2022. All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js/app.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
