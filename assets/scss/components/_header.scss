@@ -4,8 +4,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  transition: all 0.3s ease;
-  z-index: 9999;
+  transition: all 0.5 ease;
   &_logo {
     display: flex;
     justify-content: center;
@@ -59,12 +58,12 @@
   position: fixed !important;
   top: 0;
   left: 0;
-  z-index: 99;
+  z-index: 9999;
   background: #fff;
   width: 100%;
   padding: 0px 10px;
   box-shadow: 1px 1px 0px $primary;
-  transition: all 0.2 ease;
+  transition: all 0.5 ease;
 }
 
 @media only screen and (max-width: 539px) {
@@ -86,6 +85,9 @@
         display: block;
       }
       transform: translateX(-110%);
+      &_link {
+        padding: 16px 10px;
+      }
     }
     .fixed .menu {
       top: 50px;
@@ -104,8 +106,8 @@
     }
   }
   .fixed {
-    width: calc(100% - 40px);
-    padding: 0px 20px;
+    width: calc(100% - 20px);
+    padding: 0px 10px;
   }
 }
 @media only screen and (min-width: 540px) and (max-width: 719px) {
@@ -127,6 +129,9 @@
       &_list {
         display: block;
       }
+      &_link {
+        padding: 16px 10px;
+      }
       transform: translateX(-110%);
     }
     .fixed .menu {
@@ -146,8 +151,8 @@
     }
   }
   .fixed {
-    width: calc(100% - 40px);
-    padding: 0px 20px;
+    width: calc(100% - 20px);
+    padding: 0px 10px;
   }
 }
 @media only screen and (min-width: 720px) and (max-width: 959px) {

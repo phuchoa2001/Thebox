@@ -118,8 +118,7 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  transition: all 0.3s ease;
-  z-index: 9999;
+  transition: all 0.5 ease;
 }
 .header_logo {
   display: flex;
@@ -168,12 +167,12 @@ body {
   position: fixed !important;
   top: 0;
   left: 0;
-  z-index: 99;
+  z-index: 9999;
   background: #fff;
   width: 100%;
   padding: 0px 10px;
   box-shadow: 1px 1px 0px #2947A9;
-  transition: all 0.2 ease;
+  transition: all 0.5 ease;
 }
 
 @media only screen and (max-width: 539px) {
@@ -197,6 +196,9 @@ body {
   .header .menu_list {
     display: block;
   }
+  .header .menu_link {
+    padding: 16px 10px;
+  }
   .header .fixed .menu {
     top: 50px;
   }
@@ -213,8 +215,8 @@ body {
     display: block;
   }
   .fixed {
-    width: calc(100% - 40px);
-    padding: 0px 20px;
+    width: calc(100% - 20px);
+    padding: 0px 10px;
   }
 }
 @media only screen and (min-width: 540px) and (max-width: 719px) {
@@ -239,6 +241,9 @@ body {
   .header .menu_list {
     display: block;
   }
+  .header .menu_link {
+    padding: 16px 10px;
+  }
   .header .fixed .menu {
     top: 50px;
   }
@@ -255,8 +260,8 @@ body {
     display: block;
   }
   .fixed {
-    width: calc(100% - 40px);
-    padding: 0px 20px;
+    width: calc(100% - 20px);
+    padding: 0px 10px;
   }
 }
 @media only screen and (min-width: 720px) and (max-width: 959px) {
